@@ -1,0 +1,18 @@
+{
+    "name": "lucas/api",
+    "autoload": {
+        "psr-4": {
+            "Lucas\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lucasleandro1",
+            "email": "lukkassoliveira2215@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.11",
+        "slim/psr7": "^1.6"
+    }
+}
