@@ -30,7 +30,7 @@ class TimeDAO{
     }
 
     public function update(Time $time){
-        $sql = 'UPDATE time SET nome = ?, genero = ?, duracao = ? WHERE id = ?';
+        $sql = 'UPDATE time SET nome = ?, ano = ?, libertadores = ?, brasileirao = ?, estadual = ?, copadobrasil = ?  WHERE id = ?';
         $stmt = Conexao::getConn()->prepare($sql);
         $stmt->bindValue(1, $time->getNome());
         $stmt->bindValue(2, $time->getAno());
